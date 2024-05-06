@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style3.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-space-between">
+      <div>
+        <img src="../static/wedge.jpeg" alt="" />
+        <img src="../static/units.jpeg" alt="" />
+      </div>
+      <div>
+        <form method="post" action="#">
+          <h1 class="d-flex justify-content-center my-5">Failure Analysis:</h1>
+          <div class="container">
+            <div class="input-group input-group-lg">
+              <span class="input-group-text" id="inputGroup-sizing-lg"
+                >Gamma-Water</span
+              >
+              <input
+                step="any"
+                name="gama-water"
+                type="number"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg"
+              />
+            </div>
+            <div class="input-group input-group-lg my-3">
+              <span class="input-group-text" id="inputGroup-sizing-lg"
+                >Gamma-Rock</span
+              >
+              <input
+                step="any"
+                name="gamma-rock"
+                type="number"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg"
+              />
+            </div>
+
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Strike1:</span
+                >
+                <input
+                  step="any"
+                  name="strike1"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Dip1:</span
+                >
+                <input
+                  step="any"
+                  name="dip1"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Strike2:</span
+                >
+                <input
+                  step="any"
+                  name="strike2"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Dip2:</span
+                >
+                <input
+                  step="any"
+                  name="dip2"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Strike3:</span
+                >
+                <input
+                  step="any"
+                  name="strike3"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Dip3:</span
+                >
+                <input
+                  step="any"
+                  name="dip3"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Strike4:</span
+                >
+                <input
+                  step="any"
+                  name="strike4"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Dip4:</span
+                >
+                <input
+                  step="any"
+                  name="dip4"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Strike5:</span
+                >
+                <input
+                  step="any"
+                  name="strike5"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Dip5:</span
+                >
+                <input
+                  step="any"
+                  name="dip5"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip"></div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Anchor Tension(aT):</span
+                >
+                <input
+                  step="any"
+                  name="aT"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Anchor Tension(sT):</span
+                >
+                <input
+                  step="any"
+                  name="sT"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >External Load(aE):</span
+                >
+                <input
+                  step="any"
+                  name="aE"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >External Load(sE):</span
+                >
+                <input
+                  step="any"
+                  name="sE"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >T:</span
+                >
+                <input
+                  name="T"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >E:</span
+                >
+                <input
+                  name="E"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >phi1:</span
+                >
+                <input
+                  name="phi1"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >phi2:</span
+                >
+                <input
+                  name="phi2"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >c1:</span
+                >
+                <input
+                  name="c1"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >c2:</span
+                >
+                <input
+                  name="c2"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="strike_dip">
+              <div class="input-group input-group-lg my-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Height of Plane1:</span
+                >
+                <input
+                  name="H1"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+
+              <div class="input-group input-group-lg my-3 px-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Length of distance of crack from crest , along Plane1:</span
+                >
+                <input
+                  name="L"
+                  step="any"
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="input-group input-group-lg my-3">
+              <span class="input-group-text" id="inputGroup-sizing-lg"
+                >itta</span
+              >
+              <input
+                name="itta"
+                step="any"
+                type="number"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg"
+              />
+            </div>
+            {% if ans1 %}
+            <h1>{{ans1}}</h1>
+            {% endif %} {% if ans %}
+            <h1>{{ans}}</h1>
+            {% endif %} {% if fos %}
+            <h3>Factor of Safety: {{fos}}</h3>
+            <h3>Weight of Wedge: {{w}}</h3>
+            <h3>Area 1: {{a1}}</h3>
+            <h3>Normal 1: {{n1}}</h3>
+            <h3>Area 2: {{a2}}</h3>
+            <h3>Normal 2: {{n2}}</h3>
+            {% endif %}
+
+            <div class="d-flex justify-content-space-between">
+              <a
+                href="{{ url_for('download_new_image') }}"
+                class="btn btn-primary button"
+                >Download Image</a
+              >
+              {% if plot_url %}
+              <img src="data:image/png;base64,{{ plot_url }}" />
+              {% endif %}
+            </div>
+            <div class="d-flex justify-content-center container">
+              <button
+                id="myButton"
+                type="submit"
+                value="submit"
+                class="btn btn-primary w-100"
+                style="height: 7vh"
+                onclick="hello()"
+              >
+                Start Analysis
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{url_for('static', filename='script/main.js')}}"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.strike_dip {
+  display: flex;
+  padding: 2px 3px;
+}
+.image {
+  padding: 60px 30px;
+}
+.image img {
+  height: 650px;
+  width: 650px;
+}
+.button {
+  position: absolute;
+  right: 10vh;
+  top: 6vh;
+}

@@ -1,0 +1,73 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background: url("../7b5W.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+.title-main {
+  margin-top: 8.75vh;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* blinking cursor effect */
+  width: 0;
+  animation: typing 3s steps(17) forwards;
+  color: orange;
+}
+
+.title-img {
+  width: 150px;
+  height: 150px;
+}
+.crousle {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.button {
+  margin: 7vh auto;
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  width: 200px;
+  height: 75px;
+}
+#carouselExampleInterval {
+  width: 35%;
+  border: 2px solid black;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 600px) {
+  .title-main {
+    font-size: 20px;
+    margin-top: 5.5vh;
+    font-weight: 500;
+  }
+  .title-img {
+    width: 100px;
+    height: 100px;
+  }
+  .button {
+    margin-top: 3vh;
+  }
+  .button button {
+    font-size: 6px;
+    width: 64px;
+    height: 24px;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25ch;
+  }
+}
